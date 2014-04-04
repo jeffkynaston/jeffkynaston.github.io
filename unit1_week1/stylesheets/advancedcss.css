@@ -9,6 +9,12 @@ body {
 	font-size: 20px;
 }
 
+p {
+	text-align: center;
+	vertical-align: middle;
+	line-height: 700px;
+}
+
 #container {
 	display: block;
 	width: 780px;
@@ -59,11 +65,12 @@ body {
 }
 
 .sidebar:hover {
-	opacity: 1.0;
+	opacity: .8;
 }
 
-p {
+.sidebar p {
 	text-align: center;
 	vertical-align: middle;
-	line-height: 700px;
+	line-height: 200px;
+	color: #53A7FF;
 }
