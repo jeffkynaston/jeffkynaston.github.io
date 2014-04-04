@@ -1,0 +1,47 @@
+body {
+	background-color: #8DD5FF;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	font-family: 'Open Sans', sans-serif;
+	color: #334D5C;
+}
+
+p {
+	color: #DF5A49;
+	font-weight: normal;
+}
+
+p em {
+  color: #57231C;
+}
+
+p strong {
+	font-weight: bolder;
+}
+
+ol, ul {
+	font-family: 'Ceviche One', cursive;
+	font-size: 30px;
+	color: #8F4D28;
+}
+
+#first_paragraph {
+	background-color: #63FFE1;
+}
+
+.img1 {
+	margin: 20px;
+	box-shadow: 10px 10px 5px #888888;
+	width: 249px;
+	height: 188px;
+
+}
+
+.img2 {
+	margin: 5px;
+	box-shadow: 10px 10px 5px #888888;
+	width: 404px;
+	height: 250px;
+
+}
