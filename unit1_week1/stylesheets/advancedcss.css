@@ -1,0 +1,53 @@
+body {
+	background: #e8eae9;
+}
+body {
+	background: #e8eae9;
+	font-family: 'Open Sans';
+	font-weight: 300;
+	color: #082136;
+	font-size: 20px;
+}
+
+#container {
+	display: block;
+	width: 780px;
+	height: 800px;
+	background: #fff;
+	margin: auto;
+	top: 40px;
+}
+
+/*
+.box-set {
+  background: #e8eae9;
+  overflow: auto;
+  width: ;
+  margin: auto;
+
+}
+*/
+
+.content {
+  background: #53A7FF;
+  height: 700px;
+  float: right;
+  margin: 40px 18px;
+  width: 70%;
+  display: inline;
+}
+
+.sidebar {
+	background: #53A7FF;
+	height: 700px;
+	float: right;
+	margin: 40px 18px;
+	width: 20%;
+	display: inline;
+}
+
+p {
+	text-align: center;
+	vertical-align: middle;
+	line-height: 700px;
+}
