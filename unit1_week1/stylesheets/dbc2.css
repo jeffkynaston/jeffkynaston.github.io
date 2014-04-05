@@ -6,9 +6,14 @@ body {
 	font-size: 20px;
 }
 
-p {
-	text-align: center;
-	vertical-align: middle;
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	font-weight: 600;
+	color: #3498DB;
+	background: #E6EEF9;
 }
 
 /* First Header
@@ -57,6 +62,7 @@ p {
 	text-align: center;
 }
 
+
 /*
 .box-set {
   background: #e8eae9;
@@ -75,7 +81,6 @@ p {
   width: 780px;
   display: block;
   z-index: 0;
-  line-height: 700px;
 }
 
 .sidebar {
@@ -103,7 +108,49 @@ p {
 	color: #2C3E50;
 }
 
+
+/* Content Placeholder
 .content p {
-	width: 555px;
+	width: 560px;
+	height: 200px;
 	color: #2ECC71;
+	line-height: 200px;
+}
+*/
+
+.post {
+	width: 470px;
+	height: 200px;
+	margin: 20px 30px;
+	line-height: 20px;
+	color: #E6EEF9;
+	text-align: left;
+	font-size: 15px;
+	font-weight: 300;
+	vertical-align: middle;
+	padding: 20px;
+	background: rgba(255,255,255,.2);
+	position: relative;
+	top: 20px;
+	vertical-align: center;
+}
+
+.post span {
+	color: #2ECC71;
+}
+
+.green {
+	color: #2ECC71;
+}
+
+.center {
+	margin: 10px auto;
+}
+
+.caption {
+	background: rgba(44,62,80,.6);
+	top: -40px;
+	position: relative;
+	width: 440px;
+	text-align: center;
 }
