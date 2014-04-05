@@ -149,8 +149,8 @@ a:hover {
 
 .caption {
 	background: rgba(44,62,80,.6);
-	top: -40px;
-	position: relative;
+	top: 30px;
+	position: absolute;
 	width: 440px;
 	text-align: center;
 }
