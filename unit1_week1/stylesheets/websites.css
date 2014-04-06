@@ -47,6 +47,7 @@ a:hover {
 	width: 780px;
 	height: 800px;
 	margin: auto;
+	overflow: hidden;
 }
 
 #footer {
@@ -81,7 +82,7 @@ a:hover {
   width: 780px;
   display: block;
   z-index: 0;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .content h2 {
