@@ -2,7 +2,7 @@ body {
 	background: #E6EEF9;
 	font-family: 'Open Sans';
 	font-weight: 300;
-	color: #082136;
+	color: #E6EEF9;
 	font-size: 20px;
 }
 
@@ -81,6 +81,16 @@ a:hover {
   width: 780px;
   display: block;
   z-index: 0;
+  overflow: scroll;
+}
+
+.content h2 {
+	text-align: center;
+}
+
+.content p {
+	padding: 0px 20px;
+	font-size: 17px;
 }
 
 .sidebar {
