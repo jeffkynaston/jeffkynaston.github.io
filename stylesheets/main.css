@@ -5,7 +5,7 @@ body {
 	color: #082136;
 	font-size: 1em;
 	max-width: 1200px;
-	min-width: 900px;
+	min-width: 600px;
 	margin: auto;
 }
 
@@ -214,17 +214,22 @@ footer {
 	position: relative;
 	display: block;
 	text-align: center;
-	line-height: 60px;
+	line-height: 1.2em;
 	vertical-align: middle;
 	overflow: auto;
 }
 
 .bio-content p {
-	margin-bottom: 20px;
+	margin-bottom: 5px;
+	padding: 0px 50px;
 }
 
 .bio-content span {
 	color: #2ECC71;
+}
+
+.bio-content h3 {
+	margin-top: 40px;
 }
 
 
@@ -302,4 +307,15 @@ footer {
 	position: absolute;
 	width: 100%;
 	text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+     .body: {
+          background: #000;
+          font-size: 1.3em;
+          min-width: 0px;
+     }
 }
