@@ -23,45 +23,58 @@
 
 		</header>
 		
-		<div class="sidebar"><h2><a href="#css-positioning">CSS Positioning</a></h2><p>April 9, 2014</p><h2><a href="#comparing-websites">Comparing Websites</a></h2><p>April 2, 2014</p></div>
+		<div class="sidebar"><h2><a href="#margins-borders-padding">Margins, Borders and Padding</a></h2><p>April 9, 2014</p><h2><a href="#comparing-websites">Comparing Websites</a></h2><p>April 2, 2014</p></div>
 		
 		<div class="content-static">
 		<section class="work-content">
-			<article class="post">
+
+			<article class="post" name="margins-borders-padding">
+				<h2>CSS Margins, Borders and Padding</h2>
+				
+				<p>Have you ever spent hours painstakingly planning the layout of your content, only to find, once you code it up, that all of your elements don't fit? Margins, Borders and Padding can help us fine tune the style of our webpages, but we need to account for all of them when spacing out our content.</p>
+				
+				<img src="../images/margin-border-padding.png">
+				
+				<h3>Margins</h3>
+				<p>Margins are <strong>transparent</strong> and used to add spacing between different parts of your content. Common examples you may have seen are the space betweean a header and the main body of content, or the area between two pictures in a thumbnail gallery. Margins can be applied to any and all sides of an object, and can be expressed in em, pixels, or percentages. <p>
+
+				<h3>Borders</h3>
+				<p>Borders are meant to frame your content. You can style them in many different ways including solid, dashed, dotted and double lines. Borders can also be transparent, display an image or take on a number of different 3D properties. They can be expressed in any width and for any or all sides of your content.<p>
+
+				<h3>Padding</h3>
+				<p>Padding is used to put space between your content and and its border; it is frequently used to keep text from running all the way to the edges of a div.  It's easy to get confused - if you think of a modern word processor, padding would actually represent the 'margin' property of your document. Padding can be expressed in em, pixels or percentages and will take on the background color of your content area.</p>
+
+				<p>Because padding is transparent and located inside of the border, many people forget to consider the padding width when developing webpage layouts. When you are determining the spacing of your content - remember! Margins, Borders, and Padding all add to the object's width on the page.</p>	
+			</article>
+
+			<article class="post" name="comparing-websites">
 				<h2>Comparing Websites</h2>
 				<h3>Sound Cloud</h3>
 
-			<p>Sound Cloud is one of my favorite websites because of the content it serves. While other music applications specialize on serving mainstream songs (Spotify), Sound Cloud is a great place to find obscure remixes and original tracks from artists all over the world.</p>
+				<p>Sound Cloud is one of my favorite websites because of the content it serves. While other music applications specialize on serving mainstream songs (Spotify), Sound Cloud is a great place to find obscure remixes and original tracks from artists all over the world.</p>
 
-			<p>Once signed into Sound Cloud, users are routed directly to a homepage (soundcloud.com/stream) designed for them to discover, listen to, and share music. The homepage is laid out well, drawing immediate attention to the main content area which features a 'newsfeed' of songs pulled from past listening history and friends' recommendations. Sound Cloud uses the burnt orange color of their logo throughout the page to highlight their most important features, such as the play button for each song. </p>
+				<p>Once signed into Sound Cloud, users are routed directly to a homepage (soundcloud.com/stream) designed for them to discover, listen to, and share music. The homepage is laid out well, drawing immediate attention to the main content area which features a 'newsfeed' of songs pulled from past listening history and friends' recommendations. Sound Cloud uses the burnt orange color of their logo throughout the page to highlight their most important features, such as the play button for each song. </p>
 
-			<p>This music sharing website employes a number of tools to make their user experience as simple as possible, starting with the gloabl search that is available from any page in the main header. Each song served to users in the newsfeed is accompanied by a robust set of features including sharing, adding to playlists, liking, re-posting, and downloading (if available). This setup allows users to utlize 90% of the site's functionality through one central dashboard. A list of the user's favorite songs and recommended artists are available beside the newsfeed, making their homepage the one-stop-shop for all of your Sound Cloud needs.</p> 
+				<p>This music sharing website employes a number of tools to make their user experience as simple as possible, starting with the gloabl search that is available from any page in the main header. Each song served to users in the newsfeed is accompanied by a robust set of features including sharing, adding to playlists, liking, re-posting, and downloading (if available). This setup allows users to utlize 90% of the site's functionality through one central dashboard. A list of the user's favorite songs and recommended artists are available beside the newsfeed, making their homepage the one-stop-shop for all of your Sound Cloud needs.</p> 
 
-			<h3>Whiskey Militia</h3>
-			<p>Whiskey Militia is the premier deal-of-the-day website for board sports enthusiasts. In fact, I had to stop visiting the site regularly becuase it was impossible for me to go there without buying something.</p>
+				<h3>Whiskey Militia</h3>
+				<p>Whiskey Militia is the premier deal-of-the-day website for board sports enthusiasts. In fact, I had to stop visiting the site regularly becuase it was impossible for me to go there without buying something.</p>
 
-			<p>When a user arrives at whiskeymilitia.com, thier attention is immediatly drawn to the current deal - a piece of boarding apparal or hard goods which lasts anywhere from 1 to 15 minutes. Aside from a few advertisements, the only objects visible 'above the fold' are the main header, a section with purchasing options, and the focal point - a large, colorful picture of whatever item is currently on sale. If a user expands the width of their browser window, they will see that a background image takes up any space not covereed by the main container. Although using an image like this could hinder load time (the image is 329kb, thanks chrome dev tools) it isn't aesthetically un-pleasing and doesn't pull focus away from the item on sale.</p>
+				<p>When a user arrives at whiskeymilitia.com, thier attention is immediatly drawn to the current deal - a piece of boarding apparal or hard goods which lasts anywhere from 1 to 15 minutes. Aside from a few advertisements, the only objects visible 'above the fold' are the main header, a section with purchasing options, and the focal point - a large, colorful picture of whatever item is currently on sale. If a user expands the width of their browser window, they will see that a background image takes up any space not covereed by the main container. Although using an image like this could hinder load time (the image is 329kb, thanks chrome dev tools) it isn't aesthetically un-pleasing and doesn't pull focus away from the item on sale.</p>
 
-			<p>Because Whiskey Militia's user experience is centered around selling just one item at a time, they litter the remainder of realestate with advertisements in a shameless attempt to intice those uninterested by the current deal. Upon closer inspection of the home page, users will find no less than 8 ads visible above and below the fold, surrounding the featured item on three (sometimes all four) sides. While this feature may sound unpleasant, the ads are certainly easy to avoid and cause no inconvenience for experienced user. In fact, once you are familiar with the layout of the site, you will find the majority of your visits to whiskeymilitia.com lasting just one second or less.</p>
+				<p>Because Whiskey Militia's user experience is centered around selling just one item at a time, they litter the remainder of realestate with advertisements in a shameless attempt to intice those uninterested by the current deal. Upon closer inspection of the home page, users will find no less than 8 ads visible above and below the fold, surrounding the featured item on three (sometimes all four) sides. While this feature may sound unpleasant, the ads are certainly easy to avoid and cause no inconvenience for experienced user. In fact, once you are familiar with the layout of the site, you will find the majority of your visits to whiskeymilitia.com lasting just one second or less.</p>
 
-			<h3>New York Times</h3>
+				<h3>New York Times</h3>
 
-			<p>nytimes.com is the digital edition of one of America's oldest newspapers, continually published for over 160 years.</p>
+				<p>nytimes.com is the digital edition of one of America's oldest newspapers, continually published for over 160 years.</p>
 
-			<p>Upon arriving at the New York Times homepage, users are greeted to a grid-like structure of news articles similiar to what they would see in print. A simple white background overlaid with black text allows the bold headlines and carefully selected pictures to stand out, drawing the reader's attention. Above the fold, a snapshot of the homepage reveals just three small adertisements, all unimposing and carefully tucked away into separate corners. Overall, the website is aesthetically pleasing and simple enough to keep users focused on just one thing - reading the news.</p>
+				<p>Upon arriving at the New York Times homepage, users are greeted to a grid-like structure of news articles similiar to what they would see in print. A simple white background overlaid with black text allows the bold headlines and carefully selected pictures to stand out, drawing the reader's attention. Above the fold, a snapshot of the homepage reveals just three small adertisements, all unimposing and carefully tucked away into separate corners. Overall, the website is aesthetically pleasing and simple enough to keep users focused on just one thing - reading the news.</p>
 
-			<p>Categories of news are conveniently available in the main header, providing an easy way for readers to navigate around and discover the types of articles they are interested in. The majority of content available is in text form, which readers will appreciate cosnidering that most videos require the user to view a 30-second ad before getting to any meaningful content. Perhaps the most useful feature of the site, or of any news site, is its RSS feed. The New York Times offers nearly 150 different RSS news feeds allowing users to collect, aggregate, filter and view NYT content in the format of their choosing. It might not keep me going back to nytimes.com, but it will certainly work to keep me as a dedicated reader. And if there's ever a day that I don't have internet access, I might even buy a newspaper.</p>
-			</article>
+				<p>Categories of news are conveniently available in the main header, providing an easy way for readers to navigate around and discover the types of articles they are interested in. The majority of content available is in text form, which readers will appreciate cosnidering that most videos require the user to view a 30-second ad before getting to any meaningful content. Perhaps the most useful feature of the site, or of any news site, is its RSS feed. The New York Times offers nearly 150 different RSS news feeds allowing users to collect, aggregate, filter and view NYT content in the format of their choosing. It might not keep me going back to nytimes.com, but it will certainly work to keep me as a dedicated reader. And if there's ever a day that I don't have internet access, I might even buy a newspaper.</p>
+				</article>
 		
 
-			<article class="post" name="week3">
-				<h2>Phase 0 | Unit 1 | Week 3</h2>
-				<a name="week3"></a>
-				<ul class=>
-					<li class=><a href="#">TBD</a></li>
-				</ul>
-			</article>
-
+			
 		</section>
 		</div>
 		
