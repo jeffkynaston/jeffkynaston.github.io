@@ -37,7 +37,8 @@
 
 				<p>Enumerable#map is a particularly powerful ruby method, providing developers with another way to iterate over and manipulate arrays. When .map is called on an array, it passes each element of the array through a block and returns a new array with the results. </p>
 				<p>[array].map { |x| x } would be the equivalent of [array].dup, creating a duplicate copy of the array. </p>
-				<p>
+				<p>But that's not all .map is good for. Adding a bang! to the end of your map function will still run each element through your block, but will modify the existing array. Say you had an array of names, but you wanted to capitalize each name. You could call .map! like this: [array].map! { |x| x.upcase } and the elements in your array would be capitalized. </p>
+				<p>These are pretty simple examples, but don't be afraid to get more creative in your block. Say you had an array of temperatures in fahrenheit, and you needed a duplicate array with the temperatures in celcius. You could put that equation into your block and pass your array through it, as well! [array].map { |f| (f - 32)*(5 / 9) }</p>
 
 
 			</article>
