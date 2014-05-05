@@ -291,7 +291,7 @@ footer {
 
 .post p {
 	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-bottom: 0px;
 }
 
 .post li {
@@ -321,4 +321,14 @@ footer {
           font-size: 1.3em;
           min-width: 0px;
      }
+}
+
+.headline  {
+	font-size: 75%;
+	text-align: left;
+	padding: 0px 20px;
+}
+
+.headline-caption {
+	font-size: 75%;
 }
