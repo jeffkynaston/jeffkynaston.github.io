@@ -25,7 +25,7 @@
 		
 		<div class="sidebar">
 			<h2><a href="#ruby-classes">Ruby Classes</a></h2>
-			<p>April 27, 2014</p>
+			<p>May 4, 2014</p>
 			
 		</div>
 		
@@ -35,10 +35,16 @@
 			<article class="post" name="ruby-classes">
 				<h2>Ruby Classes</h2>
 
-				<p>P1</p>
-				<p>P2</p>
-				<p>P3</p>
-				<p>P4</p>
+				<p>Classes provide the framework for objects we use in our programs - they are integral to object-oriented programming and are a very powerful part of Ruby. Characters in a video game provide a great example. Rather than build separate objects for a ton of similiar characters, we can create a character type - or class - to base our characters off of. We can give this character class specific attributes (instance variables) or actions (methods) so they can interact with other players in the game. And when we need to create another character, we don't have to code an entirely new object. We can just copy, or initialize, a new character from the class by calling Class.new</p>
+				<p>To access or create a class, the syntax is simple:</p>
+				<div class="code">class Character<br>end</div>
+				<p>Each class must have an initialize method. This method is used when calling the .new function to create a new object, or instance of the class. Any variables passed with the .new function are available for use in the initialize method and can be turned into instance variables to be used throughout the class. In the initialize method, you can also specificy criteria for a valid object by raising argument errors.</p>
+				<div class="code">def initialize(name, race, weapon, hometown)<br>&nbsp&nbsp@name = name<br>&nbsp&nbsp@race = race<br>&nbsp&nbsp@weapon = weapon<br>&nbsp&nbsp@hometown = hometown<br>&nbsp&nbspraise ArgumentError.new("Name must be less than 50 characters!") unless name.length < 50<br>end</div>
+				<p>Classes may have as many additional methods as you'd like, both regular and private. Private methods are not available outside the class, and cannot be called explicitly on an instance of an onject. They are available only within the class, to other instance methods. A classes methods are its actions - ways to manipulate its attributes (instance variables) so that the character can be dynamic and interact with other players.</p>
+				<div class="code">def change_hometown(new_hometown)<br>&nbsp&nbsp@hometown = new_hometown<br>end<br><br>def attack<br>&nbsp&nbspcase @weapon<br>&nbsp&nbspwhen "sword"<br>&nbsp&nbsp&nbsp&nbspputs "You Slash Your Enemy!"<br>&nbsp&nbspwhen "magic"<br>&nbsp&nbsp&nbsp&nbspputs "You Cast a Bolt of Acid at Your Enemy!"<br>&nbsp&nbspwhen "bow"<br>&nbsp&nbsp&nbsp&nbspputs "You Fire a Flaming Arrow at Your Enemy!"<br>&nbsp&nbspend<br>end</div>
+				<p>With this code, a new character can now be created by calling Character.new, and passing through the attributes of the character. Once a character is created, we can now use the Character#change_hometown and Character#attack methods.</p>
+				<div class="code">char1 = Character.new("The Hope Slayer", "Human", "magic", "Celdeth's Keep")<br>end<br><br>char1.change_hometown("Norwatch Castle")<br><br>char1.attack</div>
+				<p>And voila! You have your brand new character, ready to explore whatever magical world you've created! </p>
 
 
 			</article>

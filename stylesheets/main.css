@@ -327,8 +327,16 @@ footer {
 	font-size: 75%;
 	text-align: left;
 	padding: 0px 20px;
+	margin: -3.5% 0px;
 }
 
 .headline-caption {
 	font-size: 75%;
+}
+
+.code {
+	font-size: 75%;
+	text-align: left;
+	padding: 0px 20px;
+	margin: -1% 0px;
 }
