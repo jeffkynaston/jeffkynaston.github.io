@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jeff Kynaston | DBC</title>
+	<link rel="stylesheet" type="text/css" href="../stylesheets/main.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	
+
+	
+		<header>
+			<div id="logo"><a href="../index.html" alt="Home Page">Jeff Kynaston</a></div>
+			<nav>
+				<ul>
+					<a href="../resources/index.html"><li>Resources</li></a>
+					<a href="../bio/index.html"><li>Bio</li></a>
+					<a href="../blog/index.html"><li>Blog</li></a>
+					<a href="../work/index.html"><li>Work</li></a>
+				</ul>
+			</nav>
+
+		</header>
+		
+		<div class="sidebar">
+			<h2><a href="#functional-programming">Functional vs Object Oriented Programming</a></h2>
+			<p>May 9, 2014</p>
+			
+		</div>
+		
+		<div class="content-static">
+		<section class="work-content">
+
+			<article class="post" name="functional-programming">
+				<h2>Functional vs Object Oriented Programming</h2>
+
+				<p>The biggest difference between functional and object oriented programming is the notion of state. In functional programming, the output of a function depends only on the parameters passed into it. Functions can interact with other functions, but they stand alone, meaning they do not belong to a class. Without the notion of classes in functional programming, there there are no instance variables that can have an affect on the output of a function. A simple exmaple can be illustrated with a character in a video game.</p>
+				<p>In object-oriented programming, our character would be represented by a class with built-in functions and instance variables that represent the state of the object:
+					<div class="code">class Character<br>&nbsp&nbspdef initialize(name, race, weapon, hometown)<br>&nbsp&nbsp&nbsp&nbsp@name = name<br>&nbsp&nbsp&nbsp&nbsp@race = race<br>&nbsp&nbsp&nbsp&nbsp@weapon = weapon<br>&nbsp&nbsp&nbsp&nbsp@hometown = hometown<br>&nbsp&nbspend<br>
+
+					<br>&nbsp&nbspdef attack<br>&nbsp&nbsp&nbsp&nbspcase @weapon<br>&nbsp&nbsp&nbsp&nbspwhen "sword"<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspputs "#{@name} Slashes their Enemy!"<br>&nbsp&nbsp&nbsp&nbspwhen "magic"<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspputs "#{@name} Casts a Bolt of Acid at their Enemy!"<br>&nbsp&nbsp&nbsp&nbspwhen "bow"<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspputs "#{@name} Fires a Flaming Arrow at their Enemy!"<br>&nbsp&nbspend&nbsp&nbsp<br>end</div> 
+				</p>
+
+				<p>In this case, your character would be an instance of the Character class, and its state is represented by instance variables. Each character can have a name, a race, a weapon, and a hometown. If you want to use your character to attack an enemy, you just need to call the 'attack' method. Depending on your character's state, it will attack in a certain way - but you don't worry about that. You just tell it to attack, and the complexity of how it attacks is factored out. Changing that part requires updating the state of the object, or updating it's @weapon instance variable.</p>
+
+				<p>Functional programming is different. In functioanl programming, you could still create a character and tell it to attack, but you need to be more specific. Since your attack method doesn't belong to your character's class, you need to tell it who is doing the attacking and how they should attack
+
+				<div class="code">def attack(character,weapon)<br>&nbsp&nbspcase weapon<br>&nbsp&nbspwhen "sword"<br>&nbsp&nbsp&nbsp&nbspputs "#{character} Slashes their Enemy!"<br>&nbsp&nbspwhen "magic"<br>&nbsp&nbsp&nbsp&nbspputs "#{character} Casts a Bolt of Acid at their Enemy!"<br>&nbsp&nbspwhen "bow"<br>&nbsp&nbsp&nbsp&nbspputs "#{character} Fires a Flaming Arrow at their Enemy!"<br>&nbsp&nbspend<br>end</div>
+
+
+				</p>
+				<p>While it's sometimes easier for us to visualize real-world problems in object-oriented terms, there is a place for both Fundamental and Object Oriented Programming. OOP works well when there are a fixed number of actions that objects have to do, but objects are continuously being created or updated. OOP allows you to  inherit properties from another class, giving programmers the ability to quickly create new types of objects that differ slightly from their predecessors. Fundamental programming works best when you have a small number of objects, but are continuously adding new functaionlity for the same objects. In this case, developers can update a function in one place, as opposed to updating different instance methods that belong to specific types of objects.</p>
+
+
+			</article>
+
+
+			
+		</section>
+		</div>
+		
+		<footer>
+			<a href="http://jeffkynaston.github.io/" alt="Back To Index">jeffkynaston.github.io/</a>
+		</footer>
+		
+
+
+</body>
+
+</html>
+
+
