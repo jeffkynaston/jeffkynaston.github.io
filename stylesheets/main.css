@@ -336,10 +336,10 @@ footer {
 }
 
 .code {
-	font-size: 75%;
+	font-size: 90%;
 	text-align: left;
 	padding: 0px 20px;
-	margin: -1% 0px;
+	margin: 1% 0px;
 	color: #2ECC71;
 	font-family: 'Source Code Pro';
 }

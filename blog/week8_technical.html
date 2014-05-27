@@ -35,15 +35,36 @@
 			<article class="post" name="regexp">
 				<h2>Regular Expressions</h2>
 
-				<p></p>
+				<p><div class="green">Regular expressions are patterns used to match character combinations in strings.<br/><div class="headline-caption"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">Source: Mozilla Foundation</a></div></div></p>
+
+				<p>To form a regular expression, you reference a sequence of letters and use special characters ( /|*?+\ etc) to specify their pattern. In ruby, regular expressions are typically delimited with forward slashes (/). The backslash (\) will create an escape sequence and reverse the roles of letters and symbols. Letters preceeded by backslashes (/w) are used to specify patterns, while special characters preceeded by a backslash (\*) are a literal reference to that symbol. </p>
 				
-				<p></p>
+				<p>Many programming languages have dedicated libraries that provide regular expresion funcationality. A few, like Ruby, even have regualr expressions built in. In Ruby, you can use the #.match method or the =~ operator to check if a string contains a regular expression pattern. For example:</p>
+				<div class="code">/ruby/.match('ruby is awesome!')<br> => <#MatchData "ruby"></div>
+				<div class="code">/python/.match('ruby is awesome!')<br> => nil</div>
+				<div class="code">/ruby/ =~'ruby is awesome!'<br> => 0</div>
+				<div class="code">/python/ =~'ruby is awesome!'<br> => nil</div>
+				one more way! <div class="code">"ruby is awesome!"[/ruby/]<br>=> "ruby"<br></div>
+				<div class="code">"ruby is awesome!"[/python/]<br>=> nil</div>
+				
+				<p>String interpolation can be used to to form a regular expression as well. For example: </p>
 
-				<p></p>
+				<div class="code">name = "jeff"<br>/#{name}/.match("jeff is kewl")<br>=> <#MatchData "jeff"></div>
 
-				<p></p>
+				<p>Typically, when letters are adjacent to eachother within a regular expression the string must match that entire sequence of characters. \or\ will match st<strong>or</strong>e, <strong>ro</strong>ad, but not b<strong>ro</strong>ad. However, placing letters inside square prackets ([,]) will create a character class and ruby will only require one of the letters within that class to match. /[or]/ would match b<strong>ro</strong>ad just fine!</p>
 
-				<p></p>
+				<p>More commonly used characters include:<br>
+				* - Matches the preceeding character 0 or more times<br>
+				+ - Matches the preceeding character 1 or more times<br>
+				? - Matches the preceeding character 0 or 1 time<br>
+				^ - References the beginning of input<br>
+				$ - Matches the end of input<br>
+				. - Matches any character except 'newline'<br>
+				| - Matches either x or y in the expression x|y<br>
+				() - Matches whatever is between () and stores the result to be referenced later 
+			  </p>
+
+			  <p>We've only scratched the surface here with regular expressions. There are enough letters and symbols available to create nearly an infinite number of regular expression patterns, so fully understanding them requires time and practice. To get started, jump into IRB and use the .match method or the =~ operator. Good luck! </p>
 
 			</article>
 
