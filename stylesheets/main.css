@@ -117,14 +117,20 @@ footer {
 	color: #E6EEF9;
 	font-size: 1.2em;
 	font-weight: 300;
-	background: #2ECC71;
+	background: #082136;
 	position: relative;
 	display: block;
 	text-align: center;
 	line-height: 60px;
 	vertical-align: middle;
-	font-weight: 600;
+	font-weight: 300;
 }
+
+.front-content h1 {
+	font-size: 2em;
+	font-weight: 300;
+	padding-top: 20px;
+	}
 
 .front-content p {
 	margin-bottom: 20px;
@@ -141,7 +147,7 @@ footer {
 	color: #E6EEF9;
 	font-size: 15px;
 	font-weight: 300;
-	background: #2C3E50;
+	background: #082136;
 	position: relative;
 	display: block;
 	float: left;
@@ -157,7 +163,7 @@ footer {
 	color: #E6EEF9;
 	font-size: 15px;
 	font-weight: 300;
-	background: #2C3E50;
+	background: #082136;
 	position: relative;
 	display: block;
 	float: left;
@@ -167,11 +173,11 @@ footer {
 }
 
 .front-option1:hover {
-	background: #082136;
+	background: #2ECC71;
 }
 
 .front-option2:hover {
-	background: #082136;
+	background: #2ECC71;
 }
 
 .work-content {
